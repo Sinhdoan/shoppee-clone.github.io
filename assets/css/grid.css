@@ -1,0 +1,12 @@
+.grid{
+    width: 100%;
+    max-width: 100%;
+    /* Căn giữa tự động*/
+    margin: 0 auto;
+    display: block;
+}
+.grid.wide{
+    width: 1200px;
+    margin: 0 auto;
+}
+

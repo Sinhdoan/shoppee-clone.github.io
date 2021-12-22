@@ -1,0 +1,232 @@
+/*---------------Mobile and Tablet------------ */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    :root{
+
+        --header-height: 78px;
+        --header-navbar:0px;
+        --header-search: 78px;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+    }
+    .container{
+        margin-top: calc(var(--height-header-sort-bar) + var(--header-height));
+    }
+    .header__search--input-list-item a{
+        font-size: 1.2rem;
+    }
+    .header__search-cart {
+        justify-content: right;
+        margin-right: 8px;
+    }
+    .header__search-cart{
+        width: 104px;
+        margin-left: auto;
+    }
+    .Container__category{     
+        display: block;
+    }
+  .header__search-cart{
+   margin-left: auto !important;
+     
+  }
+  
+ 
+}
+/*----------PC small screen------------------ */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .wide{
+        width: 984px;
+    }
+}
+
+/*--------------Tablet------------------------ */
+@media (min-width: 740px) and (max-width: 1023px){
+    .wide{
+        width: 644px;
+    }
+    .hide-on-tablet{
+        display: none;
+    }
+    
+    .header__search--input {
+        margin-left: 20px;
+    }
+    .header__search--mobile{
+        display: none;
+    }
+    .m-5{
+        flex: 0 0 33.33333%;
+        width: 33.33333%;
+    }
+    .m-12{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .col{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .header-sort-bar-item {
+        padding: 0;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: block;
+        width: 200px;
+    }
+  .footer_download{
+      display: initial;
+  }
+  .footer_apps-download{
+      margin-left: -9px;
+  }
+}
+
+/*--------------Mobile------------------------ */
+@media (max-width: 739px){
+    :root {
+        --header-height: 66px;
+        --header-navbar: 0px;
+        --header-search: 66px;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    .header__search-cart {
+        width: 210px;
+
+    }
+    .header__search-have-cart{
+        width: 36rem;
+    }
+
+    .header__search{
+  
+      justify-content: space-between;
+    }
+    .header__search--mobile {
+    padding-right: 20px;
+      
+    }
+    .header__search--mobile-icon{
+        color: var(--white-color);
+        font-size: 2.5rem;
+        padding: 0 12px;
+    }
+
+    .header__search--input{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: var(--header-height);
+        animation: mobileSearch linear 0.5s;
+       display: none;
+    }
+    @keyframes mobileSearch {
+        from{
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(20px);
+        }
+    }
+    .header__search--checkbox-item:checked ~ .header__search--input{
+        display: flex;     
+        z-index: 1; 
+        transform: translateY(20px);
+    }
+    .header__search--input-item {
+     padding-top: 0;
+    }
+    .header__search--input-list{
+        display: none;
+    }
+  
+    .header__search--icon-logo-home {
+
+        padding-top: 7px;
+    }
+    .c-4{
+        flex: 0 0 33.33333%;
+        width: 33.33333%;
+    }
+    .c-12{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .c-6{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    .col{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .row{
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .pagination-item{
+        margin: 0 -4px;
+    }
+    .footer_download{
+        display: initial;
+    }
+    .footer_app{
+        margin-left: 4px;
+    }
+    .footer_item-link_google, .footer_item-link_appstore {
+        height: 16px;
+        width: 58px;
+    }
+    .header__search--icon-search-btn {
+        margin-top: -8px;
+    }
+    .pagination {
+        padding: 0;
+    }
+    .pagination-link {
+        font-size: 1.5rem;
+    }
+    .grid__row{
+        margin: 0;
+    }
+   
+    .header-sort-bar-item {
+        /* padding: 11px 9px; */
+        padding: 0;
+        width: 25%;
+
+    }
+    .icon-shopee-logo{
+        width: 150px;
+    
+    }
+  .icon-Hover-no-cart{
+      margin-left: auto;
+      margin-right: 5px;
+      margin-top: 4px;
+  }
+}
+/*--------------Pc------------------------ */
+@media (min-width: 1024px){
+    .header-sort-bar{
+        display: none;
+    }
+    .header__search--mobile{
+        display: none;
+    }
+}
